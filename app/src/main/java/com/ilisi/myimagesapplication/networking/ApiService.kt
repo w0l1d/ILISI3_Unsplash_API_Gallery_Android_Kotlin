@@ -8,13 +8,6 @@ import retrofit2.http.*
 interface ApiService {
 
     // Get current weather data
-    @GET("current.json")
-    fun getCurrentWeather(
-        @Query("") key: String = ApiConfig.API_KEY,
-
-        ): Call<MyImageResponse>
-
-    // Get current weather data
     @GET("/photos/random")
     fun getImages(
         @Query("client_id") key: String = ApiConfig.API_KEY,
